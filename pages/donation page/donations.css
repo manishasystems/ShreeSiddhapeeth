@@ -1,0 +1,419 @@
+
+*{
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+}
+
+/* COMMON CSS */
+.flex{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.common_container{
+    max-width:1270px;
+    width:100%;
+}
+
+/* DONATIONS PAGE  */
+.donation_section{
+    height: 80vh;
+    margin-top: 20px; padding: 10px;
+    /* border: 2px grey solid; */
+    background-color: gray;
+    overflow: hidden;
+}
+.donation_container{
+    background-color: #ff8800b3;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 3px solid white;
+    padding-top: 5px;
+}
+.donation_heading{
+     height:7vh;
+     width:100%;
+     text-align: center;
+}
+.head_linetxt{
+    font-size: 1.1em;
+    margin: 10px;
+}
+.donation_heading h2{
+    font-size: 1.8em;
+    color: ghostwhite;
+}
+.slant_line{
+    height:3px; width: 100%;
+    background-color: white;
+    /* padding:4px 6px  0px 6px; */
+}
+.donation_slides_container{
+    height: 60vh; width:100%;
+    /* background-color: yellow; */
+    padding: 10px;
+    justify-content: space-around;
+}
+.donation_slide{
+    height: 100%;
+    /* background-color: black; */
+}
+.imgslide{
+    width:40%; 
+    padding: 10px 0px;
+    background-image: url("../../images/Devi3.jpeg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.listslide{
+    width:67%;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 16px;
+    font-size: 1.3em;
+    line-height: 35px;
+    color: white;
+}
+
+
+/* PAYMENT SECTION */
+.paymentBanner{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.qr{
+    display: flex;
+    justify-content: center;
+}
+.bankDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 10px;
+}
+.FormPayment{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background: #FBE9D0;
+    font-family: 'Merriweather', sans-serif;
+    padding: 1em;
+    margin-top: 60px;
+}
+.formBanner{
+    width: 60%;
+    /* background-color: red; */
+    display: flex;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+h1 {
+   text-align: center;
+   color: #a8a8a8;
+   @include text-shadow(1px 1px 0 rgba(white, 1));
+}
+
+form {
+   max-width: 600px;
+   text-align: center;
+   margin: 20px auto;
+  
+input, textarea {
+     border:0; 
+     outline:0;
+     padding: 0.5em;
+     @include border-radius(8px);
+     display: block;
+     width: 100%;
+     margin-top: 1em;
+     font-family: 'Merriweather', sans-serif;
+     @include box-shadow(0 1px 1px rgba(black, 0.1));
+     resize: none;
+     background-color: #FBE9D0;
+    &:focus {
+       @include box-shadow(0 0px 2px rgba($red, 1)!important);
+    }
+  }
+  .border_inputs{
+    border-bottom: 1px solid black;
+  }
+  
+  #input-submit {
+     color: white; 
+     background: "red";
+     cursor: pointer;
+    
+    &:hover {
+       @include box-shadow(0 1px 1px 1px rgba(#aaa, 0.6)); 
+    }
+  }
+  
+  textarea {
+      height: 126px;
+  }
+}
+
+#input-submit{
+    background-color: orange;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#input-submit:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s;
+}
+
+.half {
+  float: left;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.right { width: 50%; }
+
+.left {
+     margin-right: 2%; 
+}
+
+
+@media (max-width: 480px) {
+  .half {
+     width: 100%; 
+     float: none;
+     margin-bottom: 0; 
+  }
+}
+
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.payments{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 5px;
+    box-sizing: border-boxs;
+    /* flex-direction: column; */
+    margin-top: 50px;
+}
+.payment_icons{
+    height: 50px;
+    width:300px;
+    margin: 0px 20px;
+}
+.gpay{
+    background-image: url("../../images/Google_Pay_logo-removebg-preview.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.phonepe{
+    background-image: url("../../images/phone_pe-removebg-preview.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.paytm{
+    background-image: url("../../images/paytm-removebg-preview.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.donation_form{
+    /* background-color: gray; */
+    flex-direction: column;
+    margin-right: 80px;
+}
+.ThankYou{
+    font-family: cursive;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+.aboutUsBanner{
+    width: 100%;
+    background-color: red;
+    height: 500px;
+    margin-top: 10px;
+}
+.PhotosbannerText{
+    width: 50%;
+    line-height: 25px;
+}
+.heading{
+    text-align: center;
+   color: rgb(0, 0, 0, 0.4);
+ text-shadow: (1px 1px 0 rgba(white, 1));
+}
+
+
+
+
+
+
+   
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container{
+        max-width: 600px;
+        width: 100%;
+    }
+    .paymentBanner{
+        width: 100%;
+    }
+    .FormPayment{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+        margin-top: 0px;
+    }
+    .bankDetails{
+        width: 100%;
+        font-size: 0.8em;
+    }
+    .payments{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 2px 5px;
+        box-sizing: border-box;
+        /* flex-direction: column; */
+        margin-top: 50px;
+        /* flex-direction: column; */
+    }
+    .payment_icons{
+        height: 50px;
+        width:100px;
+        margin: 0px auto;   
+    }
+    .gpay{
+        background-image: url("../../images/Google_Pay_logo-removebg-preview.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .phonepe{
+        background-image: url("../../images/phone_pe-removebg-preview.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .paytm{
+        background-image: url("../../images/paytm-removebg-preview.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .donation_form{
+       margin: 20px auto;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .container{
+        max-width: 600px;
+        width: 100%;
+    }
+    .paymentBanner{
+        width: 100%;
+    }
+    .FormPayment{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+        margin-top: 0px;
+    }
+    .bankDetails{
+        width: 100%;
+        font-size: 0.8em;
+    }
+    .payments{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 2px 5px;
+        box-sizing: border-box;
+        /* flex-direction: column; */
+        margin-top: 50px;
+        /* flex-direction: column; */
+    }
+    .payment_icons{
+        height: 50px;
+        width:100px;
+        margin: 0px auto;   
+    }
+    .gpay{
+        background-image: url("../../images/Google_Pay_logo-removebg-preview.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .phonepe{
+        background-image: url("../../images/phone_pe-removebg-preview.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .paytm{
+        background-image: url("../../images/paytm-removebg-preview.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .donation_form{
+       margin: 20px auto;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .paymentBanner{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .FormPayment{
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+    }
+    .bankDetails{
+        font-size: 1.2em;
+    }
+    .payments{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 2px 5px;
+        box-sizing: border-box;
+        margin-top: 50px;
+    }
+}

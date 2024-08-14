@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.bannerImg{
+    background: radial-gradient(circle at 10.6% 22.1%, rgb(206, 18, 18) 0%, rgb(122, 21, 21) 100.7%);
+}
+.bannerImg2{
+    background: linear-gradient(88.7deg, rgb(205, 33, 42) 10.6%, rgb(236, 95, 5) 90%);
+}
+.bannerImg3{
+    background: radial-gradient(circle at 10% 20%, rgb(238, 56, 56) 0%, rgba(206, 21, 0, 0.92) 90.1%);
+}
+
+.blogsBanner{
+    height: 100vh;
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    /* position: relative; */
+    /* background: linear-gradient(to left,gray 0%,black 100% ); */
+    /* background: linear-gradient(98.3deg,rgb(0,0,0)10.6%, rgb(255,0,0) 97.7%); */
+    z-index: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+}
+.Blogstext{
+    height: 100vh;
+    width: 40%;
+    font-size: 1.8em;
+    line-height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.Blogstext >p{
+    font-size: 0.8em;
+}
+.blog-line{
+    height: 50px;
+    width: 50%;
+    border-bottom: 1px solid honeydew;
+}
+.slogan-line{
+    margin-top: 15px;
+    display: flex;
+    justify-content: end;
+}
+.slogan-line >p {
+    font-size: 0.8em;
+}
+.blogImg{
+    width: 50%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: center;
+    background-position: center;
+    z-index: -300px;
+    /* filter: grayscale(60%); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Blogstext > h1{
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: whitesmoke
+}
+.blogImg >img{
+    object-fit: center;
+    margin: 0 auto;
+    margin-left: 100px;
+}
+.blogPara{
+    width: 40%;
+    margin-top: 55px;
+    font-size: 1.2em;
+}

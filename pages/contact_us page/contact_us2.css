@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    background-color: whitesmoke;
+}
+/* common css */
+.container_fluid{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+}
+/* navbar css */
+.navbarContainer{
+    background-color: orange;
+    height: 80px;
+    /* position: fixed; */
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.navbarContaints{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+.navbarContaints > li{
+    position: relative;
+
+}
+.navbarContaints > li::after{
+    content: "";
+    position: absolute;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    height: 1px;
+    left: 0;
+    bottom: 0%;
+    width: 0px;
+    background-color: red;
+    transition: .2s;
+}
+.navbarContaints li:nth-child(1):hover::after{
+    width: 60px;
+    cursor: pointer;
+}
+.navbarContaints li:nth-child(2):hover::after{
+    width: 95px;
+    cursor: pointer;
+}
+.navbarContaints li:nth-child(3):hover::after{
+    width: 103px;
+    cursor: pointer;
+}
+.navbarContaints li:nth-child(4):hover::after{
+    width: 112px;
+    cursor: pointer;
+}
+.navbarContaints > li{
+    list-style: none;
+    margin-left: 50px;
+}
+.navbarContaints > li >a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+}
+.donate-btn > button{
+    padding: 10px 20px;
+    margin-left: 50px;
+    border: none;
+    margin-top: 50px;
+    background-color: rgb(255, 253, 208);
+    border: 1px solid black;
+}
+.donate-btn > button > a{
+    color: white;
+    text-decoration: none;
+}
+.mainBody{
+    display: flex;
+    justify-content: center;
+    /* background-color: firebrick; */
+}
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: black;
+}
+.cardsContainer{
+    width: 100%;
+    /* height: 50vh; */
+    /* background-color: red; */
+    margin-bottom: 10px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: green; */
+}
+.cards{
+    width: 20%;
+    /* height: 50vh; */
+    display: flex;
+    justify-content: space-between;
+    /* background-color: olive; */
+    position: relative;
+}
+.cardInfo{
+    width: 100%;
+    height: 60vh;
+    /* background-color: gray; */
+    /* display: flex; */
+    justify-content: center;
+    border: 1px solid gray;
+    box-shadow: rgba(0, 0, 0, 0.16)0px 10px 36px 0px,rgba(0,0,0,0.06)0px 0px 0px 1px;
+    cursor: default;
+}
+.cardInfo > p{
+    margin-top: 145px;
+    text-align: center;
+}
+.name{
+    text-align: right;
+    margin-top: 15px;
+    margin-right: 5px;
+    font-weight: 700;
+}
+.cardPhoto{
+    height: 200px;
+    background-image: url("../images/profilePic.png");
+    background-size: cover;
+    width: 200px;
+    /* background-color: red; */
+    border-radius: 50%;
+    position: absolute;
+    left: 8.4%;
+    top: -90px;
+    border: 1px solid gray;
+    box-shadow: rgba(0, 0, 0, 0.16)0px 10px 36px 0px,rgba(0,0,0,0.06)0px 0px 0px 1px;
+}
+.heading1 > p{
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: default;
+    text-shadow: rgba(0, 0, 0, 0.6) 4px 3px 6px;
+}
+.testimonialContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* position: relative; */
+}
+.ab{
+    position: relative;
+}
+.testimonialMainContainer{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+.testimonial{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    height: 150px;
+    width: 80%;
+    top: 0;
+    /* background-color: red; */
+    position: absolute;
+    right: 80px;
+    border: 1px solid gray;
+    box-shadow: rgba(0, 0, 0, 0.16)0px 10px 36px 0px,rgba(0,0,0,0.06)0px 0px 0px 1px;
+}
+.testiProPic{
+    height: 200px;
+    width: 200px;
+    /* background-color: olive; */
+    background-image: url("../images/profilePic.png");
+    border: 1px solid gray;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: -22px;
+    left: -100px;
+    box-shadow: rgba(0, 0, 0, 0.16)0px 10px 36px 0px,rgba(0,0,0,0.06)0px 0px 0px 1px;
+}
+.testiDesc>p{
+    margin-left: 120px;
+    text-align: justify;
+    margin-right: 20px;
+}
+.testimonialContainer > .testimonial:nth-child(2){
+    top: 230px;
+}
+.testimonialContainer > .testimonial:nth-child(3){
+    top: 458px;
+}
+
+/* Contact from CSS */
+.contactForm{
+    height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact{
+    height: 100vh;
+    width: 100%;
+    background-color: cornsilk;
+    padding: 10px;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+.heading2{
+    font-size: 2.5em;
+    /* font-weight: 500; */
+    color: rgb(27, 26, 26);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.para{
+    font-family: sans-serif;
+    color: rgb(189, 195, 199);
+    font-size: 1.6em;
+    text-align: center;
+    line-height: 50px;
+}
+.addressinfo{
+    display: flex;
+    width: 60%;
+    margin: 15px auto;
+    justify-content: space-between;
+
+}
+.address{
+    text-align: center;
+    height: 120px;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: red; */
+    padding: 2px;
+    font-size: 1.1em;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    transition: 0.2s;
+}
+.address > i{
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+.address:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.form{
+    height: 55vh;
+    width: 70%;
+    margin: 50px auto;
+    background-color: white;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.label{
+    font-size: 1.3em;
+}
+.ContactFormInputs{
+   height: 20px;
+   margin-left: 20px;
+   margin-top: 20px;
+   display: flex;
+   /* width: 30%; */
+   width: 130%;
+   font-size: 1.5em;
+   align-items:  center;
+   justify-content: space-between;
+   padding: 1px;
+}
+.small-icons{
+    font-size: 1.5em;
+}
+.ContactInput{
+    height: 30px;
+    outline: grey;
+    border: none;
+    border: 1px solid grey;
+    width: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.map{
+    width: 50%;
+    height: 280px;
+}
+.contactFormContainer{
+    display: flex;
+    flex-direction: column;
+}
+.ContactBtn{
+    margin: 0px auto;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+.ContactBtn {
+    padding: 0.8em 1.8em;
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+}
+   
+.ContactBtn::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+   
+.ContactBtn:hover::before {
+    width: 105%;
+}
+   
+.ContactBtn:hover {
+    color: #111;
+}
+.contactForm{
+    position: relative;
+} 
+.ContactBtn{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    cursor: pointer;
+}
+.ContactBtn > a{
+    text-decoration: none;
+    color: black;
+    
+}

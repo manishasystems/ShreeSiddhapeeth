@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* common css */
+.container_fluid{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* BANNER SECTION */
+.mainBody{
+    display: flex;
+    justify-content: center;
+    /* background-color: firebrick; */
+}
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: black;
+}
+.cardsContainer{
+    width: 100%;
+    /* height: 50vh; */
+    /* background-color: red; */
+    margin-bottom: 10px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: green; */
+}
+.cards{
+    width: 20%;
+    /* height: 50vh; */
+    display: flex;
+    justify-content: space-between;
+    /* background-color: olive; */
+    position: relative;
+}
+.cardInfo{
+    width: 100%;
+    height: 60vh;
+    /* background-color: gray; */
+    /* display: flex; */
+    justify-content: center;
+    border: 1px solid gray;
+    box-shadow: rgba(0, 0, 0, 0.16)0px 10px 36px 0px,rgba(0,0,0,0.06)0px 0px 0px 1px;
+    cursor: default;
+}
+.cardInfo > p{
+    margin-top: 145px;
+    text-align: center;
+}
+.name{
+    text-align: right;
+    margin-top: 15px;
+    margin-right: 5px;
+    font-weight: 700;
+}
+.cardPhoto{
+    height: 200px;
+    background-image: url("../images/unknown_pfp.jpg");
+    background-size: cover;
+    width: 200px;
+    /* background-color: red; */
+    border-radius: 50%;
+    position: absolute;
+    left: 8.4%;
+    top: -90px;
+    border: 1px solid gray;
+    box-shadow: rgba(0, 0, 0, 0.16)0px 10px 36px 0px,rgba(0,0,0,0.06)0px 0px 0px 1px;
+}
+.heading1 > p{
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: default;
+    text-shadow: rgba(0, 0, 0, 0.6) 4px 3px 6px;
+}
+.testimonialContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* position: relative; */
+}
+.ab{
+    position: relative;
+}
+.testimonialMainContainer{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+.testimonial{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    height: 150px;
+    width: 80%;
+    top: 0;
+    /* background-color: red; */
+    position: absolute;
+    right: 80px;
+    border: 1px solid gray;
+    box-shadow: rgba(0, 0, 0, 0.16)0px 10px 36px 0px,rgba(0,0,0,0.06)0px 0px 0px 1px;
+}
+.testiProPic{
+    height: 200px;
+    width: 200px;
+    /* background-color: olive; */
+    background-image: url("../images/unknown_pfp.jpg");
+    border: 1px solid gray;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: -22px;
+    left: -100px;
+    box-shadow: rgba(0, 0, 0, 0.16)0px 10px 36px 0px,rgba(0,0,0,0.06)0px 0px 0px 1px;
+}
+.testiDesc>p{
+    margin-left: 120px;
+    text-align: justify;
+    margin-right: 20px;
+}
+.testimonialContainer > .testimonial:nth-child(2){
+    top: 230px;
+}
+.testimonialContainer > .testimonial:nth-child(3){
+    top: 458px;
+}
